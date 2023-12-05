@@ -1,0 +1,37 @@
+.achievements .container {
+  padding-bottom: 40px;
+}
+.achievements .achievements-item {
+  width: 500px;
+  height: 360px;
+  overflow: hidden;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+.achievements .achievements-item-inner {
+  border: 6px solid var(--bg-black-100);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.achievements .achievements-item-inner .achievements-img img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.achievements .achievements-item:hover .achievements-img img {
+  transform: scale(1.07);
+}
+.achievements .achievements-heading {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.achievements .achievements-heading h2 {
+  color: var(--text-black-900);
+  font-weight: 500;
+}
