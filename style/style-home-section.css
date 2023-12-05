@@ -83,12 +83,11 @@ ul {
 }
 .shadow-dark {
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-  
 }
 
 /** aside **/
 .aside {
-  width: 270px;
+  width: 300px;
   background: var(--bg-black-100);
   position: fixed;
   left: 0;
