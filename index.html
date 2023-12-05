@@ -6,6 +6,13 @@
     <!--File css-->
     <link rel="icon" href="./assets/img/logo-transparent-png.png" />
     <link rel="stylesheet" href="./style/skin/color.css" />
+    <link rel="stylesheet" href="./style/skin/style-switcher.css">
+    <link rel="stylesheet" href="./style/skin/color.css" class="alternate-style" title="color" disabled>
+    <link rel="stylesheet" href="./style/skin/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="./style/skin/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="./style/skin/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="./style/skin/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="./style/skin/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="./style/style-home-section.css" />
     <link rel="stylesheet" href="./style/about-section.css" />
     <link rel="stylesheet" href="./style/skills-section.css" />
@@ -76,7 +83,7 @@
                 <a href="#contact" class="btn hire-me">More About Me</a>
               </div>
               <div class="home-img padd-15">
-                <img src="./assets/img/prof_pic.jpg" alt="Chan_dung" />
+                <img class="padd-5" src="./assets/img/prof_pic.jpg" alt="Chan_dung" />
               </div>
             </div>
           </div>
@@ -117,7 +124,7 @@
                             ><a
                               href="https://www.facebook.com/phatphan072.uit/"
                               target="_blank"
-                              >Phan Phát</a
+                              ><br>Phan Phát  </a
                             ></span
                           >
                         </p>
@@ -126,7 +133,7 @@
                         <p>
                           Email:&nbsp;<span>
                             <a href="mailto:phanphatlqd2003@gmail.com"
-                              >My direct email</a
+                              >phanphatlqd2003@gmail.com</a
                             ></span
                           >
                         </p>
@@ -605,7 +612,7 @@
                     <h4>Email</h4>
                     <p><span>
                       <a href="mailto:phanphatlqd2003@gmail.com"
-                        >My direct email</a
+                        >phanphatlqd2003@gmail.com</a
                       ></span</p>
                   
               </div>
@@ -670,8 +677,27 @@
       <!--Main Content End-->
     </div>
     <!--Main Container End-->
-
+    <!--Style Switcher Start-->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+        <div class="day-night s-icon">
+          <i class="fas"></i>
+        </div>
+        <h4>Theme Colours</h4>
+        <div class="colors">
+          <span class="color" onclick="setActiveStyle('color')"></span>
+          <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+          <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+          <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+          <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+          <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!--Style Switcher End-->
     <!--File js-->
     <script src="./js/script.js"></script>
+    <script src="./js/style-switcher.js"></script>
   </body>
 </html>

@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
+.padd-5 {
+  padding-right: 40px;
+}
 .section-title {
   flex: 0 0 100%;
   max-width: 100%;
