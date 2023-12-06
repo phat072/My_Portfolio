@@ -1,4 +1,4 @@
-@media (max-width: 1199px) {
+@media (max-width: 1500px) {
   .aside {
     left: -300px;
   }
@@ -11,7 +11,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 990px) {
   .projects .projects-item,
   .contact .contact-item,
   .achievements .achievements-item,
@@ -27,7 +27,7 @@
     display: none;
   }
 }
-@media (max-width: 767) {
+@media (max-width: 765) {
   .contact .contact-form .col-6,
   .contact .contact-info-item,
   .achievements .achievements-item,
@@ -41,3 +41,63 @@
     max-width: 100%;
   }
 }
+
+/*responsive task bar*/
+header {
+  position: relative;
+  background: var(--bg-black-900);
+}
+
+.nav-bar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-bar .toggle-btn {
+  color: var(--text-black-900);
+  font-size: 1.5rem;
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 30px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 1;
+}
+.dropdown_menu.open {
+  height: 300px;
+}
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  padding-left: 150px;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+@media (max-width: 1500px) {
+  .nav-bar .toggle-btn {
+    display: block;
+  }
+  .dropdown_menu {
+    display: block;
+  }
+}
+
+/* @media (max-width: 990px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+} */

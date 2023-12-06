@@ -80,3 +80,23 @@
 .style-switcher .color-5 {
   background: #ff23bd;
 }
+
+@media (max-width: 1500px) {
+  .style-switcher {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .style-switcher.open {
+    transform: translateX(0);
+  }
+  .style-switcher.open,
+  .style-switcher .colors,
+  .style-switcher .s-icon,
+  .style-switcher .s-icon {
+    margin-right: 0;
+    right: 0;
+  }
+  .style-switcher.open {
+    display: none;
+  }
+}
