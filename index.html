@@ -27,7 +27,7 @@
 
     <title>Phan Phát's Portfolio</title>
   </head>
-  <body>
+  <body>  
     <header>
       <div class="nav-bar padd-15">
         <div class="toggle-btn padd-15">
@@ -62,9 +62,9 @@
         <div class="logo">
           <a href="#"><span>P</span>han <span>P</span>hat</a>
         </div>
-        <div class="nav-toggler">
+        <!-- <div class="nav-toggler">
           <span></span>
-        </div>
+        </div> -->
         <ul class="nav">
           <li>
             <a href="#home" class="active"><i class="fa fa-home"></i> Home</a>
@@ -546,7 +546,7 @@
               <div class="achievements-item padd-15">
                 <div class="achievements-item-inner shadow-dark">
                   <div class="achievements-img">
-                    <img class="zoomable" src="./assets/img/pic1.jpg" alt="" />
+                    <img class="zoomable" src="./assets/img/pic1.jpg" alt="Lỗi hình" />
                   </div>
                 </div>
               </div>
@@ -555,7 +555,7 @@
               <div class="achievements-item padd-15">
                 <div class="achievements-item-inner shadow-dark">
                   <div class="achievements-img">
-                    <img class="zoomable" src="./assets/img/pic1.jpg" alt="" />
+                    <img class="zoomable" src="./assets/img/pic1.jpg" alt="Lỗi hình" />
                   </div>
                 </div>
               </div>
@@ -564,7 +564,7 @@
               <div class="achievements-item padd-15">
                 <div class="achievements-item-inner shadow-dark">
                   <div class="achievements-img">
-                    <img class="zoomable" src="./assets/img/pic1.jpg" alt="" />
+                    <img class="zoomable" src="./assets/img/pic1.jpg" alt="Lỗi hình" />
                   </div>
                 </div>
               </div>
@@ -573,7 +573,7 @@
               <div class="achievements-item padd-15">
                 <div class="achievements-item-inner shadow-dark">
                   <div class="achievements-img">
-                    <img class="zoomable" src="./assets/img/pic1.jpg" alt="" />
+                    <img class="zoomable" src="./assets/img/pic1.jpg" alt="Lỗi hình" />
                   </div>
                 </div>
               </div>
@@ -582,7 +582,7 @@
               <div class="achievements-item padd-15">
                 <div class="achievements-item-inner shadow-dark">
                   <div class="achievements-img">
-                    <img class="zoomable" src="./assets/img/pic1.jpg" alt="" />
+                    <img class="zoomable" src="./assets/img/pic1.jpg" alt="Lỗi hình" />
                   </div>
                 </div>
               </div>
@@ -591,7 +591,7 @@
               <div class="achievements-item padd-15">
                 <div class="achievements-item-inner shadow-dark">
                   <div class="achievements-img">
-                    <img class="zoomable" src="./assets/img/pic1.jpg" alt="" />
+                    <img class="zoomable" src="./assets/img/pic1.jpg" alt="Lỗi hình" />
                   </div>
                 </div>
               </div>
@@ -663,39 +663,40 @@
             <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
             <!--Contact Form-->
             <div class="row">
-              <div class="contact-form padd-15">
+              <form class="contact-form padd-15" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="df7294ad-6d31-4324-b192-6321be81bab7">
                 <div class="row">
                   <div class="form-item col-6 padd-15">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Name">
+                      <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
                     </div>
                   </div>
                   <div class="form-item col-6 padd-15">
                     <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email">
+                      <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-item col-12 padd-15">
                     <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Subject">
+                      <input type="text" class="form-control" placeholder="Subject" id="subject" name="subject" required>
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-item col-12 padd-15">
                     <div class="form-group">
-                      <textarea name="" class="form-control" id="" cols="30" placeholder="Messages"></textarea>
+                      <textarea name="message" class="form-control" id="message" cols="30" placeholder="Messages"></textarea required>
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-item col-12 padd-15">
-                    <button type="submit" class="btn">Send Messages</button>
+                    <button type="submit" class="btn" onclick="">Send Messages</button>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </section>
@@ -724,6 +725,7 @@
     </div>
     <!--Style Switcher End-->
     <!--File js-->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/script.js"></script>
     <script src="./js/style-switcher.js"></script>

@@ -1,9 +1,17 @@
+/* @import url(./about-section.css);
+@import url(./skills-section.css);
+@import url(./achievements-section.css);
+@import url(./projects-section.css);
+@import url(./style-home-section.css);
+@import url(./contact-section.css); */
+
 @media (max-width: 1500px) {
   .aside {
     left: -300px;
   }
   .main-content {
     padding-left: 0;
+    /* z-index: -100; */
   }
   .about .about-content .personal-info .info-item p span {
     display: block;
@@ -27,7 +35,7 @@
     display: none;
   }
 }
-@media (max-width: 765) {
+@media (max-width: 765px) {
   .contact .contact-form .col-6,
   .contact .contact-info-item,
   .achievements .achievements-item,
@@ -44,18 +52,26 @@
 
 /*responsive task bar*/
 header {
-  position: relative;
+  /* position: relative; */
+  height: 40px;
+  position: sticky;
+  z-index: 10;
   background: var(--bg-black-900);
 }
 
 .nav-bar {
+  position: fixed;
   width: 100%;
-  height: 60px;
+  height: 40px;
   max-width: 1200px;
   margin: 0 auto;
+  /* background-color: aqua; */
+  z-index: 100;
+  /* overflow: hidden; */
 }
 
 .nav-bar .toggle-btn {
+  /* position: fixed; */
   color: var(--text-black-900);
   font-size: 1.5rem;
   cursor: pointer;
@@ -68,22 +84,26 @@ header {
   right: 2rem;
   top: 30px;
   height: 0;
-  width: 300px;
+  width: 170px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  z-index: 1;
+  /* z-index: 1; */
+  background-color: white;
 }
 .dropdown_menu.open {
   height: 300px;
+  /* background-color: red;
+  z-index: 1; */
 }
 .dropdown_menu li {
   padding: 0.7rem;
   display: flex;
-  padding-left: 150px;
+  padding-left: 15px;
   align-items: flex-start;
   justify-content: start;
+  /* background-color: aqua; */
 }
 
 @media (max-width: 1500px) {
