@@ -1,3 +1,4 @@
+/* tạo button social link */
 .st-social-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,6 +19,10 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.st-social-link .st-social-btn .st-social-icon .icon-color {
+  color: lightgrey;
 }
 
 .st-social-link .st-social-btn:not(:last-child) {
@@ -44,6 +49,7 @@
 
 .st-social-link .st-social-btn .st-social-icon i {
   font-size: 22px;
+  color: blue;
 }
 
 .st-social-link .st-social-btn .st-icon-name {
@@ -55,8 +61,7 @@
   transition: all 0.5s ease;
 }
 
-.st-social-link .st-social-btn:hover,
-.st-social-link .st-social-btn.active {
+.st-social-link .st-social-btn:hover {
   padding-right: 15px;
 }
 
