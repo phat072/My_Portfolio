@@ -57,13 +57,15 @@ header {
   position: sticky;
   z-index: 10;
   background: var(--bg-black-900);
+  top: 0;
 }
 
 .nav-bar {
-  position: fixed;
+  /* position: fixed; */
+  position: relative;
   width: 100%;
-  height: 40px;
-  max-width: 1200px;
+  height: 50px;
+  max-width: 100%;
   margin: 0 auto;
   /* background-color: aqua; */
   z-index: 100;
@@ -82,7 +84,8 @@ header {
   display: none;
   position: absolute;
   right: 2rem;
-  top: 30px;
+  /* top: 30px; */
+  top: 100%; /* Thêm dòng này */
   height: 0;
   width: 170px;
   background: rgba(255, 255, 255, 0.1);
