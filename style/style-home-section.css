@@ -42,9 +42,9 @@ ul {
   padding: 0 30px;
   opacity: 1;
 }
-.hidden {
+/* .hidden {
   display: none !important;
-}
+} */
 .main-content {
   padding-left: 270px;
 }
